@@ -21,9 +21,8 @@ server.use(mainRoutes)
 
 // página não encontrada
 server.use((req, res) => {
-    res.send('página não encontrada')
+    res.render('pages/404')
 })
-
 
 server.listen(process.env.PORT, () => {
     console.log('http://localhost')
